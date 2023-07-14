@@ -258,6 +258,8 @@
   .section-main2 img {
     max-width: 60px;
     max-height: 60px; }
+  .nina-sonriendo {
+    width: 80%; }
   .section-main2 h3 {
     font-size: 34px; }
   .h3-index {
@@ -297,8 +299,6 @@
   .main .h2-inicio {
     font-size: 30px;
     margin: 0 3px; }
-  .flex-padre img {
-    max-width: 230px; }
   .section-main2 img {
     max-width: 55px;
     max-height: 55px; }
@@ -998,15 +998,16 @@
   .nosotros-container span {
     font-size: 20px; }
   .nosotros-container h3 {
-    font-size: 15px; }
+    font-size: 20px;
+    text-align: center; }
   .nosotros-container h5 {
     font-size: 20px; }
   .nosotros-container h6 {
-    font-size: 14px; }
+    font-size: 18px; }
   .main-nosotros p {
     font-size: 16px; }
   .main-nosotros .nosotros-img {
-    width: 75%; } }
+    width: 90%; } }
 
 .main-nos-importa {
   display: flex;
