@@ -1,0 +1,104 @@
+.header .logo {
+    width: 110px;
+    padding-left: 15px;
+
+}
+
+.header {
+    background-color: #2B2A4C;
+    width:100% ;
+ 
+}
+.header .nav{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.header ul {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    width: 370px;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+
+.header ul a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: #b8b7c1;
+    padding-right: 12px;
+}
+
+.header ul li a {
+    transition: 0.7s ease;
+}
+
+.header ul li :hover {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.burguer-button {
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 550px) {
+    .header {
+        background-color: #2B2A4C;
+        display: block;
+    }
+ 
+    .header .logo {
+        padding: 10px;
+    }
+ 
+    .nav ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#2B2A4C, #c91313);
+        padding: 0;
+        position: absolute;
+        top: 88px;
+       
+        
+        text-align: center;
+ 
+    }
+ 
+    .nav ul li {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .nav ul li a{
+       font-size: 23px;
+       padding: 0;
+       color: white;
+    }
+ 
+    .header .burguer-button {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+    }
+ 
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+        z-index: 2;
+    }
+ }
+ 

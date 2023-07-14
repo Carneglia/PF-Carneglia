@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resourses/images/proto-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html"><img src="../resourses/images/proto-logo.png" alt="logo-rotisería3" class="logo">
+            </a>
+            <ul id="menuList">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/menu.html">Menú</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/nos-importa.html">Nos Importa</a></li>
+            </ul>
+            <img class="burguer-button" src="../resourses/images/hamburguerButton.png" alt="imagen del boton del menu"
+                onclick="togglemenu()">
+
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="h1-contacto"> Contacto</h1>
+        <h2 class="h2-contacto">
+            Escribinos ¡Te queremos escuchar!
+        </h2>
+        
+        <form action="#" method="get" enctype="text/plain">
+            <div class="form-container">
+
+                <div class="form-box">
+                    <label for="Nombre">Nombre y Apellido</label>
+                    <input type="text" placeholder="Ingresar nombre y apellido" name="Nombre">
+                    <label for="Email">Correo Electrónico</label>
+                    <input type="email" placeholder="Ingresar correo" name="Email">
+                    <label for="Ubicacion">Lugar de Origen</label>
+                    <input type="text" placeholder="Ingrese lugar de residencia" name="Ubicacion">
+                    <label for="Comentario">Comentarios</label>
+                    <textarea name="Comentario" cols="8" rows="5"></textarea>
+                    <input type="submit" class="send-button">
+                </div>
+
+                <div class="mas-info-box">
+                            <h3>Más Info</h3>
+                        <div>
+                            <img src="../resourses/images/ubicacion.png" alt="Imagen Ubicación">
+                            <span>calle 2 N°1276</span>
+                        </div>
+                        <div>
+                            <img src="../resourses/images/telefono.png" alt="Imagen telefono de linea">
+                            <span>(02246)-422239</span>
+
+                        </div>
+                        <div>
+                            <img src="../resourses/images/gmail.png" alt="imagen Gmail">
+                            <span>Rotisería3@gmail.com</span>
+                        </div>
+                        <br>
+                       <br>
+                        <h3>Rotisería3.com</h3>
+                        <img class="mas-info-logo" src="../resourses/images/proto-logo.png" alt="imagen del logo">
+                       
+                </div>
+        </form>
+        </div>
+        <h3></h3>
+        <iframe class="iframe-map" id="ubicacion"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.448069844178!2d-56.691909759802236!3d-36.54330783553636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959c139ca7ba9ac5%3A0x9c4f0d1213656423!2sRotiser%C3%ADa%203!5e0!3m2!1ses-419!2sar!4v1688348444689!5m2!1ses-419!2sar"
+            width="1800" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-conteiner">
+            <span>
+                <a href="#"><img src="../resourses/images/logo-facebook.png" alt="Logo Facebook"
+                        class="social-media"></a>
+            </span>
+            <span>
+                <a href="#"><img src="../resourses/images/logo-instagram.png" alt="Logo Instagram"
+                        class="social-media"></a>
+            </span>
+
+
+            <span>
+                <a href="#"><img src="../resourses/images/logo-twitter.png" alt="Logo twitter" class="social-media">
+                </a>
+            </span>
+            <span>
+                <a href="https://goo.gl/maps/8TpK8AUAw1Z3n2FX8" target="_blank"> <img src="../resourses/images/maps-icono.png" alt="Logo maps"
+                        class="social-media"></a>
+            </span>
+        </div>
+
+    </footer>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "100%";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resourses/images/proto-logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rotisería 3</title>
+</head>
+
+<body>
+    <header class="header">
+
+
+
+        <nav class="nav">
+            <a href="./index.html"><img src="./resourses/images/proto-logo.png" alt="logo-rotisería3" class="logo">
+            </a>
+            <ul id="menuList">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/menu.html">Menú</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/nos-importa.html">Nos Importa</a></li>
+            </ul>
+            <img class="burguer-button" src="./resourses/images/hamburguerButton.png" alt="imagen del boton del menu"
+                onclick="togglemenu()">
+
+        </nav>
+
+    </header>
+    <main class="main">
+        <h1 class="h1-inicio"> Rotisería 3 - <span class="h1-tu-clasico">COMIDAS CASERAS</span></h1>
+        <div class="video-container">
+            <div><video muted autoplay loop src="./resourses/images/video-hero (2).mp4" class="video">Pollos en spiedo
+                    video</video>
+            </div>
+
+            <div class="capa"></div>
+        </div>
+
+        <section class="flex-padre">
+            <div>
+                <img src="./resourses/images/pollo-spiedo-con-limon1.png" alt="Pollo al Spiedo">
+            </div>
+            <div>
+                <img src="./resourses/images/carne-horno1.png" alt="Carne al Horno">
+            </div>
+            <div>
+                <img src="./resourses/images/Mila1.png" alt="Sandwich de Mila">
+            </div>
+
+        </section>
+        <div>
+            <h2 class="h2-inicio">Recetas Únicas con la Calidad de Siempre</h2>
+        </div>
+        <section class="section-main2">
+
+            <div class="trayectoria-box reveal fade-left">
+                <img src="./resourses/images/corazon.png" alt="Icono corazón">
+                <h3>Trayectoria</h3>
+                <p>42 años en la industria.<br> Experiencia que <br> construye confianza. <br> Somos un clásico</p>
+            </div>
+            <div class="trayectoria-box reveal fade-bottom" >
+                <img src="./resourses/images/ok.png" alt="Icono tilde ok">
+                <h3>Compromiso</h3>
+                <p>Proyectamos y garantizamos <br>el mejor precio calidad <br>del mercado </p>
+            </div>
+            <div class="trayectoria-box reveal fade-right">
+                <img src="./resourses/images/mover-selector.png" alt="icono de flechas">
+                <h3>Visión</h3>
+                <p>Trabajamos de punta a punta <br>el proceso controlando <br>la calidad final <br>de todos los
+                    productos</p>
+            </div>
+
+            <!-- 
+            <div class="trayectoria">
+                <img src="./resourses/images/corazon.png" alt="Trayectoria">
+                <div>
+                    <h1>Trayectoria</h1>
+                </div>
+                <div>
+                    <p>42 años en la industria. Experiencia que construye confianza. Somos un clásico</p>
+                </div>
+            </div>
+            <div><img src="./resourses/images/ok.png" alt="Compromiso">
+                <div>
+                    <h1>Compromiso</h1>
+                </div>
+                <div>
+                    <p>Proyectamos y garantizamos el mejor precio calidad del mercado </p>
+                </div>
+            </div>
+            <div><img src="./resourses/images/mover-selector.png" alt="Visión">
+                <div>
+                    <h1>Visión</h1>
+                </div>
+                <div>
+                    <p>Trabajamos de punta a punta el proceso controlando la calidad final de todos los productos.</p>
+                </div>
+            </div> -->
+
+        </section>
+        <div class="section-main3">
+            <img class="nina-sonriendo" src="./resourses/images/nina-sonrisa.jpg" alt="Niña sonriendo">
+            <!-- <small>
+               imagen de <a href="https://www.freepik.es/foto-gratis/nina-sonriente-celebrando-cumpleanos_14659047.htm#query=ni%C3%B1a%20sonriendo&position=16&from_view=search&track=ais">Freepik</a>
+            </small> -->
+            <h3 class="h3-index">Tu sonrisa es nuestro orgullo</h3>
+        </div>
+        <div class="carousel-container">
+            <div id="carouselExampleAutoplaying" class="carousel slide, carousel-control-width: 5%"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://goo.gl/maps/NX41fDXaQCsiSCg49" target="_blank"><img
+                                src="./resourses/images/coment1.png" class="d-block w-100" alt="comentario 1"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://goo.gl/maps/ph6fhbP2rN9Jmk6p6" target="_blank"><img
+                                src="./resourses/images/coment2.png" class="d-block w-100" alt="comentario 2"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://goo.gl/maps/Phtq5oSLnUuC4CB1A" target="_blank"> <img
+                                src="./resourses/images/coment3.png" class="d-block w-100" alt="comentario 3"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://goo.gl/maps/XSpgKHTFvqZjrsUf7" target="_blank"><img
+                                src="./resourses/images/coment4.png" class="d-block w-100" alt="comentario 4"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://goo.gl/maps/chd6iym1nh2SZJrf6" target="_blank"><img
+                                src="./resourses/images/coment5.png" class="d-block w-100" alt="comentario 5"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://goo.gl/maps/LpkzpnrTHwoEB9Fm9" target="_blank"><img
+                                src="./resourses/images/coment6.png" class="d-block w-100" alt="comentario 6"></a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-conteiner">
+            <span>
+                <a href="#"><img src="./resourses/images/logo-facebook.png" alt="Logo Facebook"
+                        class="social-media"></a>
+            </span>
+            <span>
+                <a href="#"><img src="./resourses/images/logo-instagram.png" alt="Logo Instagram"
+                        class="social-media"></a>
+            </span>
+
+            <span>
+                <a href="#"><img src="./resourses/images/logo-twitter.png" alt="Logo twitter" class="social-media"> </a>
+            </span>
+            <span>
+                <a href="https://goo.gl/maps/8TpK8AUAw1Z3n2FX8" target="_blank"> <img
+                        src="./resourses/images/maps-icono.png" alt="Logo maps" class="social-media"></a>
+            </span>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "100%";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+        function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }// } else {
+    //   reveals[i].classList.remove("active");
+    // }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+    </script>
+</body>
+
+</html>
