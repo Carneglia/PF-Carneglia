@@ -96,6 +96,9 @@
   width: 100%;
   overflow: visible; }
 
+.carousel-index-container {
+  display: none; }
+
 .flex-padre {
   padding-top: 38px;
   padding-bottom: 38px;
@@ -278,6 +281,10 @@
     align-items: center; } }
 
 @media (max-width: 550px) {
+  .carousel-index-container {
+    display: block; }
+  .flex-padre-container {
+    display: none; }
   .main .h1-inicio {
     font-size: 20px;
     display: flex;
