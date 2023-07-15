@@ -292,43 +292,53 @@
 @media(max-width:550px) {
     .title-box {
         justify-content: flex-start;
-        padding-top: 75px;
+        padding-top: 55px;
     }
 
 
     .h1-nosotros {
-        font-size: 26px;
+        border-radius: 5px;
+        font-size: 30px;
+        background-color: #f0f0f09a;
+        padding: 2px 10px;
 
     }
 
     .h2-nosotros {
-        font-size: 20px;
+        font-size: 25px;
+        color: #2B2A4C;
+        background-color: #f0f0f09a;
+        border-radius: 5px;
+        padding: 2px 10px;
     }
 
     .h3-nosotros {
-        font-size: 16px;
+        font-size: 18px;
         text-align: center;
     }
 
     .nosotros-container span {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .nosotros-container h3 {
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
     }
-
+    .nosotros-container h4{
+        font-size: 1rem;
+    }
     .nosotros-container h5 {
         font-size: 20px;
     }
 
     .nosotros-container h6 {
-        font-size: 18px;
+        font-size: 20px;
+        padding-bottom: 0;
     }
 
     .main-nosotros p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .main-nosotros .nosotros-img {
