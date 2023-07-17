@@ -48,12 +48,13 @@
     text-align: center;
 }
 
-.h3-nosotros {
+.nosotros-container .h3-nosotros {
     font-family: "oswald";
     color: #2B2A4C;
     font-size: 35px;
     text-align: center;
-
+    margin: 5px 20px;
+    margin-bottom: 20px;
 }
 
 .main-nosotros p {
@@ -73,7 +74,7 @@
     align-items: center;
     font-size: 1rem;
     opacity: 1.5;
-    margin: 30px 10px;
+    margin: 0 10px;
 }
 
 .nosotros-container p {
@@ -84,9 +85,10 @@
 
 .nosotros-container span {
     font-size: 2rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "paytone";
     margin: 5px;
     color: #2e2e2d;
+    text-transform: uppercase;
 }
 
 .nosotros-container h3 {

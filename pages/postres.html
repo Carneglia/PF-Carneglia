@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../resourses/images/proto-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Menú</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="../index.html"><img src="../resourses/images/proto-logo.png" alt="logo-rotisería3" class="logo">
+            </a>
+            <ul id="menuList">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/menu.html">Menú</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/nos-importa.html">Nos Importa</a></li>
+            </ul>
+            <img class="burguer-button" src="../resourses/images/hamburguerButton.png" alt="imagen del boton del menu"
+                onclick="togglemenu()">
+
+        </nav>
+
+    </header>
+    <h1 class="h1-menu">Menú</h1>
+    <h2 id="postres">Postres</h2>
+    <div class="postres-container">
+        <div class="postres">
+            <div>
+                <img src="../resourses/images/Flan-9-1.jpg" alt="Flan Casero con Crema">
+                <h3>Flan Casero</h3>
+                <small>c/ crema, dulce de leche y caramelo</small>
+            </div>
+            <div>
+                <img src="../resourses/images/budin-de-pan-con-crema.jpg" alt="Budin de Pan con Crema y Dulce de Leche">
+                <h3>Budin de Pan</h3>
+                <small>c/ crema, dulce de leche y caramelo</small>
+            </div>
+
+        </div>
+    </div>
+
+    <body>
+        <footer class="footer">
+            <div class="footer-container">
+                <h6>Única sucursal - calle 2 n°1276 <img src="../resourses/images/proto-logo.png" alt="logo del local">
+                </h6>
+                <h6>Encargos al <img class="phone-footer" src="../resourses/images/telephone.png" alt="icono telefono">
+                    (02246)-422239</h6>
+
+                <h6>Medios de Pago</h6>
+                <div class="iconos-pago">
+                    <img src="../resourses/images/cuentaDni.png" alt="logo cuenta dni">
+                    <img src="../resourses/images/logo-mercado-pago.png" alt="logo mercado de Pago">
+                    <img src="../resourses/images/debito.png" alt="logo debito">
+                </div>
+                <div class="redes-footer">
+                    <div class="redes-box">
+                        <small class="small-footer">Seguinos</small>
+                        <img src="../resourses/images/logo-instagram.png" alt="logo Instagram">
+                    </div>
+                    <div class="redes-box">
+                        <small class="small-footer">Comentanos</small>
+                        <a href="https://goo.gl/maps/8TpK8AUAw1Z3n2FX8" target="_blank"> <img
+                                src="../resourses/images/maps-icono.png" alt="Logo maps"></a>
+                    </div>
+                </div>
+
+
+                <small class="small-footer">2023 © | Todos los derechos reservados |<br>Desarrollo "Carlos Carneglia
+                    Design"</small>
+
+            </div>
+
+        </footer>
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu() {
+
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "100%";
+                }
+                else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+
+</html>

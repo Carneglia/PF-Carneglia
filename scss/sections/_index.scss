@@ -232,7 +232,7 @@ display: none;
     }
     .nina-sonriendo {
         width: 80%;}
-        
+
     .section-main2 h3 {
         font-size: 34px;
     }
@@ -272,7 +272,12 @@ display: none;
 
 @media (max-width: 550px) {
     .carousel-index-container{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .caurousel{
+            
+        }
         }
         .flex-padre-container{
             display: none;

@@ -7,13 +7,13 @@
 }
 
     .footer-container{
-        
+        position: relative;
         display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     }
+
     h6{
         font-family: "Oswald";
         color: white;
@@ -22,7 +22,7 @@
         padding: 10px 0;
         font-weight: unset;
     }
-   
+
         .small-footer{
         font-family: "oswald";
         color: white;
@@ -30,15 +30,15 @@
         margin-top: 5px;
         padding: 5px;
     }
-
-.footer{
+    .footer{
     img{
         width: 40px;
       
     }
    
 }
-.footer .redes-footer{ 
+
+    .footer .redes-footer{ 
     padding: 15px 0;
    display: grid;
    grid-template-columns: 1fr 1fr;

@@ -284,7 +284,9 @@
 
 @media (max-width: 550px) {
   .carousel-index-container {
-    display: block; }
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .flex-padre-container {
     display: none; }
   .main .h1-inicio {
@@ -346,8 +348,7 @@
 
 .main-menu {
   width: 100%;
-  height: 100%;
-  background-image: url("../resourses/carne-horno.png"); }
+  height: 100%; }
 
 .h1-menu {
   color: #b31312;
@@ -360,217 +361,32 @@
   text-transform: uppercase; }
 
 .main-menu h2 {
-  font-family: "invisible";
   text-align: center;
-  color: #2B2A4C;
-  font-size: 35px;
-  margin: 10px; }
+  font-size: 30px;
+  margin: 10px;
+  background-color: #e9e6edd7;
+  padding: 5px 0; }
+  .main-menu h2 a {
+    font-family: "invisible";
+    text-decoration: none;
+    color: #2B2A4C; }
 
-.barra-menu {
-  background-color: #EEE2DE;
-  display: flex;
-  width: 100%; }
+.flex-padre-menu h2:hover {
+  font-size: 32px;
+  transition: 0.7s ease;
+  padding: 5px; }
 
-.barra-menu ul {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #EEE2DE;
-  justify-content: center;
-  padding-bottom: 10px; }
-
-.barra-menu a {
-  text-decoration: none;
-  font-family: "oswald";
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 10px;
-  color: #2B2A4C;
-  /* background-color: #fff479ec; */
-  border-radius: 2px; }
-
-.barra-menu a:hover {
-  font-size: 15px;
-  text-decoration: overline;
-  color: #6561df;
-  transition: 0.5s ease;
-  padding: 12px; }
-
-.flex-padre-menu .clasicos {
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+.flex-padre-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
   background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-  background-position: center;
+  background-position: right;
   background-size: cover; }
 
-.clasicos img {
-  max-height: 425px;
-  border-radius: 5px; }
-
-.clasicos h3 {
-  font-family: "new-font";
-  padding-top: 4px; }
-
-.clasicos p {
-  font-size: 16px;
-  font-family: "new-font";
-  padding: 3px 2px; }
-
-.clasicos small {
-  font-size: 10px;
-  font-weight: bold; }
-
-.clasicos .carne-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.clasicos .pollo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.clasicos .merluza-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.clasicos .napo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.clasicos .sandwich-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.flex-padre-menu div {
-  padding: 10px; }
-
-.acompanamientos {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.acompanamientos .fries-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos .backed-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos .bomb-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos .smash-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos .salad-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos .tortillas-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.acompanamientos h3 {
-  font-family: "new-font";
-  padding-top: 4px; }
-
-.acompanamientos p {
-  font-size: 16px;
-  font-family: "new-font";
-  padding: 3px 2px; }
-
-.acompanamientos small {
-  font-size: 10px;
-  font-weight: bold; }
-
-.flex-padre-menu .acompanamientos img {
-  max-width: 300px;
-  height: 223px;
-  border-radius: 5px; }
-
-.flex-padre-menu .pastas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.flex-padre-menu .pastas h3 {
-  font-family: "new-font";
-  padding-top: 4px;
-  margin: auto;
-  text-align: center; }
-
-.flex-padre-menu .pastas img {
-  max-width: 450px;
-  border-radius: 5px;
-  margin: 0 20px; }
-
-.flex-padre-menu .empanadas {
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.flex-padre-menu .empanadas h3 {
-  font-family: "new-font";
-  margin: auto;
-  text-align: center; }
-
-.flex-padre-menu .empanadas div {
-  margin: 0 6px; }
-
-.flex-padre-menu .empanadas img {
-  max-width: 300px;
-  height: 223px;
-  border-radius: 5px; }
-
-.flex-padre-menu .postres {
-  border-radius: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-  background-position: center;
-  background-size: cover; }
-
-.flex-padre-menu .postres img {
-  max-width: 300px;
-  height: 223px;
-  border-radius: 5px; }
-
-.flex-padre-menu .postres h3 {
-  font-family: "new-font";
-  margin: auto;
-  text-align: center; }
+.flex-padre-menu img {
+  width: 354px;
+  border-radius: 15px; }
 
 @media (max-width: 1400px) {
   .h1-menu {
@@ -586,6 +402,8 @@
     max-width: 430px; } }
 
 @media (max-width: 1200px) {
+  .flex-padre-menu {
+    grid-template-columns: 1fr 1fr; }
   .h1-menu {
     font-size: 33px; }
   .main-menu h2 {
@@ -611,6 +429,10 @@
     max-width: 390px; } }
 
 @media (max-width: 768px) {
+  .flex-padre-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .h1-menu {
     font-size: 31px; }
   .main-menu h2 {
@@ -831,11 +653,13 @@
   font-size: 42px;
   text-align: center; }
 
-.h3-nosotros {
+.nosotros-container .h3-nosotros {
   font-family: "oswald";
   color: #2B2A4C;
   font-size: 35px;
-  text-align: center; }
+  text-align: center;
+  margin: 5px 20px;
+  margin-bottom: 20px; }
 
 .main-nosotros p {
   padding: 10px;
@@ -851,7 +675,7 @@
   align-items: center;
   font-size: 1rem;
   opacity: 1.5;
-  margin: 30px 10px; }
+  margin: 0 10px; }
 
 .nosotros-container p {
   color: #212020;
@@ -860,9 +684,10 @@
 
 .nosotros-container span {
   font-size: 2rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: "paytone";
   margin: 5px;
-  color: #2e2e2d; }
+  color: #2e2e2d;
+  text-transform: uppercase; }
 
 .nosotros-container h3 {
   margin: 20px auto;
@@ -1174,6 +999,7 @@
   opacity: 1; }
 
 .footer-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1209,6 +1035,251 @@ h6 {
 .footer .phone-footer {
   width: 18px;
   height: 18px; }
+
+.h1-menu {
+  color: #b31312;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  background-color: #EEE2DE;
+  font-family: "paytone";
+  font-size: 36px;
+  text-transform: uppercase; }
+
+h2 {
+  font-family: "invisible";
+  text-align: center;
+  color: #2B2A4C;
+  font-size: 35px;
+  margin: 10px; }
+
+.clasicos-container {
+  width: 95%;
+  margin: auto; }
+
+.clasicos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 20px; }
+
+.clasicos img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px; }
+
+.clasicos h3 {
+  font-family: "new-font";
+  padding-top: 4px; }
+
+.clasicos p {
+  font-size: 16px;
+  font-family: "new-font";
+  padding: 3px 2px; }
+
+.clasicos small {
+  font-size: 10px;
+  font-weight: bold; }
+
+.clasicos .carne-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px; }
+
+.clasicos .pollo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px; }
+
+.clasicos .merluza-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px; }
+
+.clasicos .napo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px; }
+
+.clasicos .sandwich-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 5px; }
+
+.acompanamientos-container {
+  width: 95%;
+  margin: auto; }
+
+.acompanamientos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.acompanamientos .fries-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos .backed-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos .bomb-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos .smash-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos .salad-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos .tortillas-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.acompanamientos h3 {
+  font-family: "new-font";
+  padding-top: 4px; }
+
+.acompanamientos p {
+  font-size: 16px;
+  font-family: "new-font";
+  padding: 3px 2px; }
+
+.acompanamientos small {
+  font-size: 10px;
+  font-weight: bold; }
+
+.acompanamientos img {
+  width: 350px;
+  border-radius: 15px; }
+
+.pastas-container {
+  width: 95%;
+  margin: auto; }
+
+.pastas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.pastas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+  .pastas div small {
+    font-weight: bold;
+    font-size: 10px; }
+
+.pastas h3 {
+  font-family: "new-font";
+  padding-top: 4px;
+  margin: auto;
+  text-align: center; }
+
+.pastas img {
+  max-width: 450px;
+  border-radius: 15px;
+  margin: 0 20px; }
+
+.empanadas-container {
+  width: 95%;
+  margin: auto; }
+
+.empanadas {
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+  background-position: center;
+  background-size: cover; }
+  .empanadas div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; }
+    .empanadas div small {
+      font-size: 10px;
+      font-weight: bold; }
+
+.empanadas h3 {
+  font-family: "new-font";
+  margin: auto;
+  text-align: center; }
+
+.empanadas img {
+  max-width: 300px;
+  height: 223px;
+  border-radius: 5px; }
+
+.postres-container {
+  width: 95%;
+  margin: auto; }
+
+.postres {
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.postres div {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .postres div small {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center; }
+
+.postres img {
+  max-width: 400px;
+  border-radius: 5px; }
+
+.postres h3 {
+  font-family: "new-font";
+  margin: auto;
+  text-align: center; }
 
 @font-face {
   font-family: "invisible";

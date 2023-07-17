@@ -1,0 +1,78 @@
+.acompanamientos-container{
+    width: 95%;
+    margin: auto;
+}
+.acompanamientos {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.acompanamientos .fries-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+}
+
+.acompanamientos .backed-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.acompanamientos .bomb-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.acompanamientos .smash-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.acompanamientos .salad-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.acompanamientos .tortillas-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.acompanamientos h3 {
+    font-family: "new-font";
+    padding-top: 4px;
+}
+
+.acompanamientos p {
+    font-size: 16px;
+    font-family: "new-font";
+    padding: 3px 2px;
+}
+
+.acompanamientos small {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.acompanamientos img {
+    width: 350px;
+    // max-width: 300px;
+    // height: 223px;
+    border-radius: 15px;
+}
