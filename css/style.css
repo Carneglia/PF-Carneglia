@@ -283,10 +283,16 @@
     align-items: center; } }
 
 @media (max-width: 550px) {
+  .main {
+    background-image: url("../resourses/images/fondo-menu.jpg");
+    background-position: top;
+    background-size: cover; }
   .carousel-index-container {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    max-width: 360px;
+    margin: auto; }
   .flex-padre-container {
     display: none; }
   .main .h1-inicio {
