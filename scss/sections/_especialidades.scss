@@ -95,11 +95,7 @@ h2 {
 }
 
 @media (max-width:1400px) {
-    .h1-menu {
-        font-size: 35px;
-    }
-
-    h2 {
+       h2 {
         font-size: 33px;
     }
 
@@ -111,19 +107,12 @@ h2 {
     }
 }
 @media (max-width:1200px) {
-    .h1-menu {
-        font-size: 33px;
-    }
-
-    h2 {
+        h2 {
         font-size: 31px;
     }
 }
 @media(max-width:992px) {
-    .h1-menu {
-        font-size: 32px;
-    }
-
+   
     h2{
         font-size: 30px;
     }
@@ -134,20 +123,13 @@ h2 {
         flex-direction: column;
         align-items: center;
     }
-    .h1-menu {
-        font-size: 31px;
-    }
-
+  
     h2 {
         font-size: 29px;
     }
 }
 @media(max-width:576px) {
-    .h1-menu {
-        font-size: 25px;
-    }
-
-     h2 {
+        h2 {
         font-size: 25px;
     }
 }

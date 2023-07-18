@@ -12,21 +12,20 @@
     max-height: 427px;
     width: 100%;
     overflow: visible;
+    display: none;
 }
-.carousel-index-container{
-display: none;
+
+.carousel-index-container {
+    display: none;
 }
 
 
 .flex-padre {
     padding-top: 38px;
     padding-bottom: 38px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    height: auto;
-    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     background-image: url("../resourses/images/fondo-menu.jpg");
     background-position: right;
     background-size: cover;
@@ -34,8 +33,7 @@ display: none;
 
 
 .flex-padre img {
-    max-width: 345px;
-    max-height: 397px;
+    width: 95%;
     border-radius: 7px;
     overflow-y: auto;
 }
@@ -67,14 +65,70 @@ display: none;
 .section-main2 {
     width: 100%;
     background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     height: 100%;
 
     img {
         width: 67px;
         height: 67px;
+    }
+    .reveal {
+        position: relative;
+        opacity: 0;
+    }
+
+    .reveal.active {
+        opacity: 1;
+    }
+
+    .active.fade-bottom {
+        animation: fade-bottom 0.8s ease-in;
+    }
+
+    .active.fade-left {
+        animation: fade-left 0.8s ease-in;
+    }
+
+    .active.fade-right {
+        animation: fade-right 0.8s ease-in;
+    }
+
+    @keyframes fade-bottom {
+        0% {
+            transform: translateY(-200px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-left {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-right {
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
 
@@ -82,7 +136,7 @@ display: none;
     color: #c91313;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-   margin: 10px 0;
+    margin: 10px 0;
     background-color: #ffffff;
     font-size: 40px;
 }
@@ -92,7 +146,8 @@ display: none;
     font-size: 18px;
     text-align: center;
 }
-.trayectoria-box{
+
+.trayectoria-box {
     background-color: #ffffff;
     margin: 10px 0;
     display: flex;
@@ -101,9 +156,9 @@ display: none;
     align-items: center;
     justify-content: center;
     width: 270px;
-    height: 320px;
+    height: 338px;
     margin: 15px auto;
-    
+
 }
 
 
@@ -143,22 +198,27 @@ display: none;
     background-size: cover;
     display: flex;
     justify-content: center;
-    }
+}
 
 
 @media(max-width: 924px) {
-    .flex-padre img {
-        max-width: 309px;
-        max-height: 366px;
-    }
 
-    .section-main2 img {
-        max-width: 65px;
-        max-height: 65px;
-    }
+    .section-main2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-    .section-main2 h3 {
-        font-size: 38px;
+        img {
+            max-width: 65px;
+            max-height: 65px;
+
+
+            .section-main2 h3 {
+                font-size: 38px;
+
+                
+            }
+        }
     }
 }
 
@@ -173,8 +233,8 @@ display: none;
     }
 
     .flex-padre img {
-        max-width: 309px;
-        max-height: 327px;
+        // max-width: 309px;
+        // max-height: 327px;
     }
 
     .main .h2-inicio {
@@ -185,7 +245,7 @@ display: none;
     .section-main2 img {
         max-width: 62px;
         max-height: 62px;
-       
+
     }
 
     .section-main2 h3 {
@@ -195,8 +255,8 @@ display: none;
 
 @media(max-width: 764px) {
     .flex-padre img {
-        max-width: 309px;
-        max-height: 300px;
+        // max-width: 309px;
+        // max-height: 300px;
     }
 
     .main .h1-tu-clasico {
@@ -216,8 +276,8 @@ display: none;
 
 @media (max-width:700px) {
     .flex-padre img {
-        max-width: 309px;
-        max-height: 397px;
+        // max-width: 309px;
+        // max-height: 397px;
     }
 
     .main .h2-inicio {
@@ -228,10 +288,12 @@ display: none;
     .section-main2 img {
         max-width: 60px;
         max-height: 60px;
-       
+
     }
+
     .nina-sonriendo {
-        width: 80%;}
+        width: 80%;
+    }
 
     .section-main2 h3 {
         font-size: 34px;
@@ -244,7 +306,7 @@ display: none;
 
 @media (max-width: 600px) {
     .flex-padre img {
-        max-width: 230px;
+        // max-width: 230px;
     }
 
     .main .h2-inicio {
@@ -264,28 +326,32 @@ display: none;
     .h3-index {
         font-size: 29px;
     }
-    .section-main2{
-    flex-direction: column;
-    align-items: center;
+
+    .section-main2 {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media (max-width: 550px) {
-    .main{
+    .main {
         background-image: url("../resourses/images/fondo-menu.jpg");
         background-position: top;
         background-size: cover;
     }
-    .carousel-index-container{
+
+    .carousel-index-container {
         display: flex;
         align-items: center;
         justify-content: center;
         max-width: 360px;
         margin: auto;
-        }
-        .flex-padre-container{
-            display: none;
-        }
+    }
+
+    .flex-padre-container {
+        display: none;
+    }
+
     .main .h1-inicio {
         font-size: 20px;
         display: flex;
@@ -315,7 +381,8 @@ display: none;
     .section-main2 h3 {
         font-size: 33px;
     }
-    .section-main2 p{
+
+    .section-main2 p {
         font-size: 18px;
     }
 
@@ -327,52 +394,5 @@ display: none;
     .video-container {
         display: none;
     }
-    .reveal {
-        position: relative;
-        opacity: 0;
-      }
-      
-      .reveal.active {
-        opacity: 1;
-      }
-      .active.fade-bottom {
-        animation: fade-bottom 0.8s ease-in;
-      }
-      .active.fade-left {
-        animation: fade-left 0.8s ease-in;
-      }
-      .active.fade-right {
-        animation: fade-right 0.8s ease-in;
-      }
-      @keyframes fade-bottom {
-        0% {
-          transform: translateY(-200px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-      @keyframes fade-left {
-        0% {
-          transform: translateX(-100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
-      
-      @keyframes fade-right {
-        0% {
-          transform: translateX(100px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-      }
+
 }
