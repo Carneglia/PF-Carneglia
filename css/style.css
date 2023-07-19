@@ -83,24 +83,21 @@
     transition: 0.5s;
     z-index: 2; } }
 
-.video-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  opacity: 1;
-  background-color: #1c1c1d; }
+.main .h1-inicio {
+  color: #B31312;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  background-color: #EEE2DE;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px; }
+  .main .h1-inicio .h1-tu-clasico {
+    font-family: "paytone"; }
 
-.video {
-  max-height: 427px;
-  width: 100%;
-  overflow: visible;
+.main .carousel-index-container {
   display: none; }
 
-.carousel-index-container {
-  display: none; }
-
-.flex-padre {
+.main .flex-padre-container .flex-padre {
   padding-top: 38px;
   padding-bottom: 38px;
   display: grid;
@@ -109,25 +106,12 @@
   background-image: url("../resourses/images/fondo-menu.jpg");
   background-position: right;
   background-size: cover; }
+  .main .flex-padre-container .flex-padre img {
+    width: 95%;
+    border-radius: 7px;
+    overflow-y: auto; }
 
-.flex-padre img {
-  width: 95%;
-  border-radius: 7px;
-  overflow-y: auto; }
-
-.h1-inicio {
-  color: #B31312;
-  text-align: center;
-  padding-top: 2px;
-  padding-bottom: 6px;
-  background-color: #EEE2DE;
-  font-family: 'Oswald', sans-serif;
-  font-size: 36px; }
-
-.h1-tu-clasico {
-  font-family: "paytone"; }
-
-.h2-inicio {
+.main .h2-inicio {
   color: #2B2A4C;
   text-align: center;
   font-size: 40px;
@@ -136,26 +120,26 @@
   background-color: #ffffff;
   font-family: "invisible"; }
 
-.section-main2 {
+.main .section-main2 {
   width: 100%;
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   height: 100%; }
-  .section-main2 img {
+  .main .section-main2 img {
     width: 67px;
     height: 67px; }
-  .section-main2 .reveal {
+  .main .section-main2 .reveal {
     position: relative;
     opacity: 0; }
-  .section-main2 .reveal.active {
+  .main .section-main2 .reveal.active {
     opacity: 1; }
-  .section-main2 .active.fade-bottom {
+  .main .section-main2 .active.fade-bottom {
     animation: fade-bottom 0.8s ease-in; }
-  .section-main2 .active.fade-left {
+  .main .section-main2 .active.fade-left {
     animation: fade-left 0.8s ease-in; }
-  .section-main2 .active.fade-right {
+  .main .section-main2 .active.fade-right {
     animation: fade-right 0.8s ease-in; }
 
 @keyframes fade-bottom {
@@ -181,36 +165,30 @@
   100% {
     transform: translateX(0);
     opacity: 1; } }
+  .main .section-main2 h3 {
+    color: #c91313;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+    background-color: #ffffff;
+    font-size: 40px; }
+  .main .section-main2 p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-align: center; }
+  .main .section-main2 .trayectoria-box {
+    background-color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #d9d8d8 0px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 338px;
+    margin: 15px auto; }
 
-.section-main2 h3 {
-  color: #c91313;
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  margin: 10px 0;
-  background-color: #ffffff;
-  font-size: 40px; }
-
-.section-main2 p {
-  font-family: 'Oswald', sans-serif;
-  font-size: 18px;
-  text-align: center; }
-
-.trayectoria-box {
-  background-color: #ffffff;
-  margin: 10px 0;
-  display: flex;
-  flex-direction: column;
-  box-shadow: #d9d8d8 0px 0px 10px 0px;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 338px;
-  margin: 15px auto; }
-
-.foto-local {
-  width: 100%; }
-
-.section-main3 {
+.main .section-main3 {
   background-image: url(../resourses/images/fondo-menu.jpg);
   background-size: cover;
   background-position: center;
@@ -219,128 +197,129 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0; }
+  .main .section-main3 .nina-sonriendo {
+    width: 60%;
+    border-radius: 15px; }
+  .main .section-main3 .h3-index {
+    padding-top: 10px;
+    font-size: 35px;
+    font-family: "paytone";
+    text-align: center;
+    text-transform: uppercase;
+    color: #b31312; }
 
-.nina-sonriendo {
-  width: 60%;
-  border-radius: 15px; }
-
-.h3-index {
-  padding-top: 10px;
-  font-size: 35px;
-  font-family: "paytone";
-  text-align: center;
-  text-transform: uppercase;
-  color: #b31312; }
-
-.carousel-container {
+.main .carousel-container {
   background-image: url(../resourses/images/local.JPG);
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center; }
 
+@media (max-width: 1400px) {
+  .main .h1-inicio {
+    font-size: 35px; } }
+
+@media (max-width: 1200px) {
+  .main .h1-inicio {
+    font-size: 33px; } }
+
 @media (max-width: 924px) {
-  .section-main2 {
+  .main .h1-inicio {
+    font-size: 31px; }
+  .main .section-main2 {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .section-main2 img {
+    .main .section-main2 img {
       max-width: 65px;
       max-height: 65px; }
-      .section-main2 img .section-main2 h3 {
+      .main .section-main2 img .section-main2 h3 {
         font-size: 38px; } }
 
 @media (max-width: 850px) {
-  .video-container {
-    display: none; }
   .main .h1-tu-clasico {
-    font-size: 33px;
-    color: #B31312; }
+    font-size: 30px; }
   .main .h2-inicio {
     font-size: 38px;
     margin: 0 3px; }
-  .section-main2 img {
+  .main .section-main2 img {
     max-width: 62px;
     max-height: 62px; }
-  .section-main2 h3 {
+  .main .section-main2 h3 {
     font-size: 36px; } }
 
 @media (max-width: 764px) {
   .main .h1-tu-clasico {
-    font-size: 30px;
+    font-size: 29px;
     color: #B31312; }
   .main .h2-inicio {
     font-size: 36px;
     margin: 0 3px; }
-  .h3-index {
+  .main .section-main3 .h3-index {
     font-size: 33px; } }
 
 @media (max-width: 700px) {
   .main .h2-inicio {
     font-size: 34px;
     margin: 0 3px; }
-  .section-main2 img {
+  .main .section-main2 img {
     max-width: 60px;
     max-height: 60px; }
-  .nina-sonriendo {
-    width: 80%; }
-  .section-main2 h3 {
+  .main .section-main2 h3 {
     font-size: 34px; }
-  .h3-index {
+  .main .section-main3 .nina-sonriendo {
+    width: 80%; }
+  .main .section-main3 .h3-index {
     font-size: 31px; } }
 
 @media (max-width: 600px) {
   .main .h2-inicio {
     font-size: 32px;
     margin: 0 3px; }
-  .section-main2 img {
-    max-width: 58px;
-    max-height: 58px; }
-  .section-main2 h3 {
-    font-size: 32px; }
-  .h3-index {
-    font-size: 29px; }
-  .section-main2 {
+  .main .section-main2 {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+    .main .section-main2 img {
+      max-width: 58px;
+      max-height: 58px; }
+    .main .section-main2 h3 {
+      font-size: 32px; }
+  .main .section-main3 .h3-index {
+    font-size: 29px; } }
 
 @media (max-width: 550px) {
   .main {
     background-image: url("../resourses/images/fondo-menu.jpg");
     background-position: top;
     background-size: cover; }
-  .carousel-index-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 360px;
-    margin: auto; }
-  .flex-padre-container {
-    display: none; }
-  .main .h1-inicio {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column; }
-  .header a {
-    padding: 0 3px; }
-  .main .h1-tu-clasico {
-    font-size: 25px;
-    color: #2B2A4C; }
-  .main .h2-inicio {
-    font-size: 30px;
-    margin: 0 3px; }
-  .section-main2 img {
-    max-width: 55px;
-    max-height: 55px; }
-  .section-main2 h3 {
-    font-size: 33px; }
-  .section-main2 p {
-    font-size: 18px; }
-  .h3-index {
-    font-size: 25px;
-    padding-top: 15px; }
-  .video-container {
-    display: none; } }
+    .main .carousel-index-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 360px;
+      margin: auto; }
+    .main .flex-padre-container {
+      display: none; }
+    .main .h1-inicio {
+      font-size: 20px;
+      display: flex;
+      flex-direction: column; }
+    .main .h1-tu-clasico {
+      font-size: 25px;
+      color: #2B2A4C; }
+    .main .h2-inicio {
+      font-size: 30px;
+      margin: 0 3px; }
+    .main .section-main2 img {
+      max-width: 55px;
+      max-height: 55px; }
+    .main .section-main2 h3 {
+      font-size: 30px; }
+    .main .section-main2 p {
+      font-size: 18px; }
+    .main .section-main3 .h3-index {
+      font-size: 25px;
+      padding-top: 15px; } }
 
 .main-menu {
   width: 100%;
@@ -1289,20 +1268,3 @@ h2 {
 @font-face {
   font-family: "carter";
   src: url(../resourses/tipografia/CarterOne-Regular.ttf); }
-
-/****** HEADER ******/
-/****** INDEX MAIN ******/
-/****** MENU MAIN ******/
-/****** Nosotros MAIN ******/
-/****** CONTACTO MAIN ******/
-/****** NOS IMPORTA MAIN ******/
-/* .playas-limpias-nota p{
-   color: black;
-   padding: 10px;
-   font-weight: normal;
-} */
-/***** MEDIA INDEX *****/
-/***** MEDIA MENU *****/
-/***** MEDIA NOSOTROS *****/
-/***** MEDIA CONTACTO *****/
-/***** MEDIA HEADER *****/
