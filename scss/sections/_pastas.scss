@@ -1,42 +1,63 @@
-.pastas-container{
+.pastas-container {
     width: 95%;
     margin: auto;
-}
-.pastas {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.pastas{
-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-    small{
-        font-weight: bold;
-        font-size: 10px;
+
+    .pastas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+        background-position: center;
+        background-size: cover;
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+
+            img {
+                max-width: 450px;
+                border-radius: 15px;
+                margin: 0 20px;
+            }
+
+            h3 {
+                font-family: "new-font";
+                padding-top: 4px;
+                margin: auto;
+                text-align: center;
+            }
+
+            small {
+                font-weight: bold;
+                font-size: 10px;
+            }
+        }
     }
-}    
-}
-.pastas h3 {
-    font-family: "new-font";
-    padding-top: 4px;
-    margin: auto;
-    text-align: center;
 }
 
-.pastas img {
-    max-width: 450px;
-    border-radius: 15px;
-    margin: 0 20px;
+@media (max-width:1400px) {
+    .pastas-container {
+        .pastas {
+            img {
+                width: 90%;
+            }
+        }
+    }
 }
-@media (max-width:1400px){
-    .pastas img{
-        width: 90%;
+
+@media (max-width:768px) {
+    .pastas-container {
+        .pastas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 85%;
+            }
+        }
     }
 }
