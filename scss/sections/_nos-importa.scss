@@ -1,9 +1,3 @@
-.main-nos-importa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .h1-nos-importa {
     color: #B31312;
     text-align: center;
@@ -15,124 +9,146 @@
     text-transform: uppercase;
 }
 
-.h2-nos-importa {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #2B2A4C;
-    font-size: 50px;
-    font-weight: 500;
-    padding: 15px
-}
+.main-nos-importa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.h3-nos-importa {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #2B2A4C;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 15px
-}
+    .blog-container {
+        article {
+            .h2-nos-importa {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color: #2B2A4C;
+                font-size: 50px;
+                font-weight: 500;
+                padding: 15px
+            }
 
-.main-nos-importa .p-reciclar {
-    color: black;
-    font-size: 22px;
-    font-weight: bold;
-    padding: 10px;
-}
+            .p-reciclar {
+                color: black;
+                font-size: 22px;
+                font-weight: bold;
+                padding: 10px;
+            }
 
-.main-nos-importa p {
-    color: #1f1f1f;
-    /* font-weight: 300px; */
-    padding: 10px;
-    max-width: 800px;
-    text-align: justify;
-}
+            p {
+                color: #1f1f1f;
+                padding: 10px;
+                max-width: 800px;
+                text-align: justify;
+            }
+        }
 
-.p-increible {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        .h3-nos-importa {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #2B2A4C;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 15px
+        }
 
-.p-style-title {
-    color: #2B2A4C;
-    font-size: 26px;
-}
+        .p-increible {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
+        .h4-nos-importa {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: #B31312;
+            font-size: 45px;
+            font-weight: 500;
+            padding: 15px;
+            /* text-align: center; */
+        }
 
-.h4-nos-importa {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #B31312;
-    font-size: 45px;
-    font-weight: 500;
-    padding: 15px;
-    /* text-align: center; */
-}
+        .p-style-title {
+            color: #2B2A4C;
+            font-size: 26px;
+        }
 
-.h5-nos-importa {
-    font-family: "carter";
-    color: #ee7b1c;
-    font-size: 35px;
-    font-weight: 500;
-    padding: 15px;
-}
+        .playas-limpias-img {
+            max-width: 70%;
+            padding: 15px;
+        }
 
-.emoji-abrazo {
-    max-width: 50px;
-}
+        .h5-nos-importa {
+            font-family: "carter";
+            color: #ee7b1c;
+            font-size: 35px;
+            font-weight: 500;
+            padding: 15px;
+        }
 
-.playas-limpias-img {
-    max-width: 70%;
-    padding: 15px;
-}
+        .emoji-abrazo {
+            max-width: 50px;
+        }
 
+        .ul-playas-limpias li {
+            margin-left: 25px;
+            max-width: 850px;
+        }
 
-.ul-playas-limpias li {
-    margin-left: 25px;
-    max-width: 850px;
+        p {
+            color: #1f1f1f;
+            padding: 10px;
+            max-width: 800px;
+            text-align: justify;
+        }
+    }
 }
 
 @media (max-width: 1400px) {
-    .div-container {
-        margin: auto;
-    }
-
-    .div-container .h1-nos-importa {
+    .h1-nos-importa {
         font-size: 31px;
     }
 
-    .div-container .h2-nos-importa {
-        font-size: 48px;
-    }
+    .main-nos-importa {
+        .blog-container {
+            margin: auto;
 
-    .div-container .h4-nos-importa {
-        font-size: 43px;
-    }
+            article {
+                .h2-nos-importa {
+                    font-size: 48px;
+                }
+            }
 
-    .div-container .h5-nos-importa {
-        font-size: 33px;
+            .h4-nos-importa {
+                font-size: 43px;
+            }
+
+            .h5-nos-importa {
+                font-size: 33px;
+            }
+        }
     }
 }
 
-
 @media (max-width: 1200px) {
-
     .h1-nos-importa {
         font-size: 30px;
     }
 
-    .div-container .h2-nos-importa {
-        font-size: 46px;
-    }
+    .main-nos-importa {
+        .blog-container {
+            article {
+                .h2-nos-importa {
+                    font-size: 46px;
+                }
 
-    .div-container .h4-nos-importa {
-        font-size: 41px;
-    }
+                .p-reciclar {
+                    font-size: 21px;
+                }
+            }
 
-    .div-container .h5-nos-importa {
-        font-size: 31px;
-    }
+            .h4-nos-importa {
+                font-size: 41px;
+            }
 
-    .main-nos-importa .p-reciclar {
-        font-size: 21px;
+            .h5-nos-importa {
+                font-size: 31px;
+            }
+        }
     }
 }
 
@@ -141,20 +157,26 @@
         font-size: 28px;
     }
 
-    .div-container .h2-nos-importa {
-        font-size: 44px;
-    }
+    .main-nos-importa {
+        .blog-container {
+            article {
+                .h2-nos-importa {
+                    font-size: 44px;
+                }
 
-    .div-container .h4-nos-importa {
-        font-size: 39px;
-    }
+                .p-reciclar {
+                    font-size: 20px;
+                }
+            }
 
-    .div-container .h5-nos-importa {
-        font-size: 29px;
-    }
+            .h4-nos-importa {
+                font-size: 39px;
+            }
 
-    .main-nos-importa .p-reciclar {
-        font-size: 20px;
+            .h5-nos-importa {
+                font-size: 29px;
+            }
+        }
     }
 }
 
@@ -163,64 +185,76 @@
         font-size: 28px;
     }
 
-    .nos-importa-iframe {
-        width: 100%;
-    }
+    .main-nos-importa {
+        .blog-container {
+            article {
+                .h2-nos-importa {
+                    font-size: 44px;
+                }
 
-    .div-container .h2-nos-importa {
-        font-size: 44px;
-    }
+                .p-reciclar {
+                    font-size: 20px;
+                }
+            }
 
-    .div-container .h3-nos-importa {
-        font-size: 23px;
+            .h3-nos-importa {
+                font-size: 23px;
+            }
 
-    }
+            .h4-nos-importa {
+                font-size: 39px;
+            }
 
-    .div-container .h4-nos-importa {
-        font-size: 39px;
-    }
+            .h5-nos-importa {
+                font-size: 29px;
+            }
+        }
 
-    .div-container .h5-nos-importa {
-        font-size: 29px;
-    }
-
-    .main-nos-importa .p-reciclar {
-        font-size: 20px;
+        article {
+            .nos-importa-iframe {
+                width: 100%;
+            }
+        }
     }
 }
 
 @media(max-width:576px) {
-    .main-nos-importa {
-        align-items: flex-start;
-    }
-
-    .nos-importa-iframe {
-        width: 100%;
-
-    }
-
     .h1-nos-importa {
         font-size: 27px;
     }
 
-    .div-container .h2-nos-importa {
-        font-size: 42px;
-    }
+    .main-nos-importa {
+        align-items: flex-start;
 
-    .div-container .h3-nos-importa {
-        font-size: 21px;
+        .blog-container {
+            article {
+                .h2-nos-importa {
+                    font-size: 42px;
+                }
 
-    }
+                .p-reciclar {
+                    font-size: 18px;
+                }
+            }
 
-    .div-container .h4-nos-importa {
-        font-size: 37px;
-    }
+            .h3-nos-importa {
+                font-size: 21px;
+            }
 
-    .div-container .h5-nos-importa {
-        font-size: 27px;
-    }
+            .h4-nos-importa {
+                font-size: 37px;
+            }
 
-    .main-nos-importa .p-reciclar {
-        font-size: 18px;
+            .h5-nos-importa {
+                font-size: 27px;
+            }
+
+            article {
+                .nos-importa-iframe {
+                    width: 100%;
+
+                }
+            }
+        }
     }
 }
