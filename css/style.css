@@ -898,84 +898,64 @@
 
 .footer {
   width: 100%;
-  height: auto;
-  padding: 10px 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  opacity: 1; }
-  .footer .footer-container {
-    position: relative;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .footer .grupo-uno {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "telefono-footer logo-footer contacto-footer" "iconos-pago redes-footer nosotros-footer" "ubicacion-footer small .";
-    justify-items: center;
-    align-items: center; }
-    .footer .footer-container .small {
-      grid-area: small; }
-    .footer .footer-container .ubicacion-footer {
-      grid-area: ubicacion-footer; }
-    .footer .footer-container .contacto-footer {
-      grid-area: contacto-footer; }
-      .footer .footer-container .contacto-footer a {
-        font-family: "Oswald";
-        color: white;
-        font-size: 17px;
-        text-decoration: none; }
-    .footer .footer-container .nosotros-footer {
-      grid-area: nosotros-footer; }
-      .footer .footer-container .nosotros-footer a {
-        font-family: "Oswald";
-        color: white;
-        font-size: 17px;
-        text-align: center;
-        text-decoration: none; }
-    .footer .footer-container .iconos-pago {
-      grid-area: iconos-pago; }
-      .footer .footer-container .iconos-pago img {
-        width: 40px; }
-    .footer .footer-container .telefono-footer {
-      grid-area: telefono-footer; }
-      .footer .footer-container .telefono-footer img {
-        width: 20px; }
-    .footer .footer-container .logo-footer {
-      grid-area: logo-footer;
-      width: 125px; }
-    .footer .footer-container .redes-footer {
-      grid-area: redes-footer;
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .footer .footer-container .redes-footer img {
-        width: 40px; }
-    .footer .footer-container h6 {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0; }
+    .footer .grupo-uno a {
       font-family: "Oswald";
       color: white;
       font-size: 17px;
       text-align: center;
-      font-weight: unset; }
-    .footer .footer-container .small-footer {
+      text-decoration: none;
+      margin-left: 20px; }
+    .footer .grupo-uno .phone-footer {
+      width: 20px;
+      height: 20px; }
+    .footer .grupo-uno .redes-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      .footer .grupo-uno .redes-footer img {
+        width: 40px; }
+    .footer .grupo-uno figure {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .footer .grupo-uno figure img {
+        width: 120px; }
+    .footer .grupo-uno h6 {
+      font-family: "Oswald";
+      color: white;
+      font-size: 17px;
+      font-weight: unset;
+      margin-top: 8px;
+      margin-left: 20px; }
+    .footer .grupo-uno .small-footer {
       font-family: "oswald";
       color: white;
       text-align: center;
       margin-top: 5px;
       padding: 5px; }
+  .footer .grupo-dos {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0; }
+    .footer .grupo-dos small {
+      margin: 20px; }
 
-@media (max-width: 576px) {
-  .footer .footer-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "telefono-footer logo-footer" "iconos-pago redes-footer" "small small"; }
-    .footer .footer-container .contacto-footer {
-      display: none; }
-    .footer .footer-container .nosotros-footer {
-      display: none; }
-    .footer .footer-container .direccion-footer {
-      display: none; }
-    .footer .footer-container .redes-footer img {
-      padding-left: 10px; }
-    .footer .footer-container .logo-footer {
-      width: 100px; } }
+@media (max-width: 992px) {
+  .footer .grupo-uno {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px 0; } }
 
 .h1-menu {
   text-align: center;

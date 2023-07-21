@@ -1,85 +1,47 @@
 .footer {
     width: 100%;
-    height: auto;
-    padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.9);
-    opacity: 1;
 
-    .footer-container {
-        position: relative;
+    .grupo-uno {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "telefono-footer logo-footer contacto-footer"
-            "iconos-pago redes-footer nosotros-footer"
-            "ubicacion-footer small .";
-        justify-items: center;
-        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        // gap: 50px;
+        padding: 40px 0;
 
-
-        .small {
-            grid-area: small;
+        a {
+            font-family: "Oswald";
+            color: white;
+            font-size: 17px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 20px;
         }
 
-        .ubicacion-footer {
-            grid-area: ubicacion-footer;
-        }
-
-        .contacto-footer {
-            grid-area: contacto-footer;
-
-            a {
-                font-family: "Oswald";
-                color: white;
-                font-size: 17px;
-                // text-align: center;
-                text-decoration: none;
-            }
-        }
-
-        .nosotros-footer {
-            grid-area: nosotros-footer;
-
-            a {
-                font-family: "Oswald";
-                color: white;
-                font-size: 17px;
-                text-align: center;
-                text-decoration: none;
-            }
-        }
-
-        .iconos-pago {
-            grid-area: iconos-pago;
-
-            img {
-                width: 40px;
-            }
-        }
-
-        .telefono-footer {
-            grid-area: telefono-footer;
-
-            img {
-                width: 20px
-            }
-        }
-
-        .logo-footer {
-            grid-area: logo-footer;
-            width: 125px;
+        .phone-footer {
+            width: 20px;
+            height: 20px;
         }
 
         .redes-footer {
-            grid-area: redes-footer;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            justify-content: space-evenly;
 
             img {
                 width: 40px;
+            }
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 120px;
             }
         }
 
@@ -87,8 +49,9 @@
             font-family: "Oswald";
             color: white;
             font-size: 17px;
-            text-align: center;
             font-weight: unset;
+            margin-top: 8px;
+            margin-left: 20px;
         }
 
         .small-footer {
@@ -99,33 +62,63 @@
             padding: 5px;
         }
     }
+
+    .grupo-dos {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+        small{
+            margin: 20px;
+        }
+    }
+
 }
 
-@media (max-width:576px){
-    .footer{
-        .footer-container{
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas:"telefono-footer logo-footer"
-            "iconos-pago redes-footer"
-            "small small" ;
-            .contacto-footer{
-                display: none;
-            }
-            .nosotros-footer{
-                display: none;
-            }
-            .direccion-footer{
-                display: none;
-            }
-            .redes-footer{
-                img{
-                    padding-left: 10px;
-                }
-            }
-            .logo-footer{
-                width: 100px;
-            }
+@media (max-width:992px) {
+    .footer {
+        .grupo-uno {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 40px 0;
         }
     }
 }
+
+
+
+// @media (max-width:576px) {
+//     .footer {
+//         .footer-container {
+//             grid-template-columns: 1fr 1fr;
+//             grid-template-rows: 1fr 1fr 1fr;
+//             grid-template-areas: "telefono-footer logo-footer"
+//                 "iconos-pago redes-footer"
+//                 "small small";
+
+//             .contacto-footer {
+//                 display: none;
+//             }
+
+//             .nosotros-footer {
+//                 display: none;
+//             }
+
+//             .direccion-footer {
+//                 display: none;
+//             }
+
+//             .redes-footer {
+//                 img {
+//                     padding-left: 10px;
+//                 }
+//             }
+
+//             .logo-footer {
+//                 width: 100px;
+//             }
+//         }
+//     }
+// }
