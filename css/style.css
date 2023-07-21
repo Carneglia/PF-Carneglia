@@ -927,7 +927,8 @@
       align-items: center;
       justify-content: center; }
       .footer .grupo-uno figure img {
-        width: 120px; }
+        width: 120px;
+        margin: 10px; }
     .footer .grupo-uno h6 {
       font-family: "Oswald";
       color: white;
@@ -956,6 +957,10 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 40px 0; } }
+
+@media (max-width: 576px) {
+  .footer .grupo-uno .nosotros-footer {
+    display: none; } }
 
 .h1-menu {
   text-align: center;

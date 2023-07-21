@@ -8,7 +8,6 @@
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        // gap: 50px;
         padding: 40px 0;
 
         a {
@@ -42,6 +41,7 @@
 
             img {
                 width: 120px;
+                margin: 10px;
             }
         }
 
@@ -87,8 +87,14 @@
     }
 }
 
-
-
+@media (max-width:576px) {
+         .footer {
+            .grupo-uno{
+                .nosotros-footer{
+                    display: none;
+                }
+            }
+        }}
 // @media (max-width:576px) {
 //     .footer {
 //         .footer-container {
