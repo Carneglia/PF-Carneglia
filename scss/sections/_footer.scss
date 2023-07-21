@@ -4,51 +4,128 @@
     padding: 10px 0;
     background-color: rgba(0, 0, 0, 0.9);
     opacity: 1;
-}
 
-    .footer-container{
+    .footer-container {
         position: relative;
-        display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "telefono-footer logo-footer contacto-footer"
+            "iconos-pago redes-footer nosotros-footer"
+            "ubicacion-footer small .";
+        justify-items: center;
+        align-items: center;
 
-    h6{
-        font-family: "Oswald";
-        color: white;
-        font-size: 17px;
-        text-align: center;
-        padding: 10px 0;
-        font-weight: unset;
-    }
 
-        .small-footer{
-        font-family: "oswald";
-        color: white;
-        text-align: center;
-        margin-top: 5px;
-        padding: 5px;
+        .small {
+            grid-area: small;
+        }
+
+        .ubicacion-footer {
+            grid-area: ubicacion-footer;
+        }
+
+        .contacto-footer {
+            grid-area: contacto-footer;
+
+            a {
+                font-family: "Oswald";
+                color: white;
+                font-size: 17px;
+                // text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        .nosotros-footer {
+            grid-area: nosotros-footer;
+
+            a {
+                font-family: "Oswald";
+                color: white;
+                font-size: 17px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        .iconos-pago {
+            grid-area: iconos-pago;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .telefono-footer {
+            grid-area: telefono-footer;
+
+            img {
+                width: 20px
+            }
+        }
+
+        .logo-footer {
+            grid-area: logo-footer;
+            width: 125px;
+        }
+
+        .redes-footer {
+            grid-area: redes-footer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        h6 {
+            font-family: "Oswald";
+            color: white;
+            font-size: 17px;
+            text-align: center;
+            font-weight: unset;
+        }
+
+        .small-footer {
+            font-family: "oswald";
+            color: white;
+            text-align: center;
+            margin-top: 5px;
+            padding: 5px;
+        }
     }
+}
+
+@media (max-width:576px){
     .footer{
-    img{
-        width: 40px;
-      
+        .footer-container{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas:"telefono-footer logo-footer"
+            "iconos-pago redes-footer"
+            "small small" ;
+            .contacto-footer{
+                display: none;
+            }
+            .nosotros-footer{
+                display: none;
+            }
+            .direccion-footer{
+                display: none;
+            }
+            .redes-footer{
+                img{
+                    padding-left: 10px;
+                }
+            }
+            .logo-footer{
+                width: 100px;
+            }
+        }
     }
-   
-}
-
-    .footer .redes-footer{ 
-    padding: 15px 0;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-}
-.footer .redes-box{
-    display: flex;
-    align-items: center;
-}
-
-.footer .phone-footer{
-    width: 18px;
-    height: 18px;
 }
