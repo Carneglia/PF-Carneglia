@@ -24,8 +24,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
-            background-image: url("../resourses/images/fondo-menu.jpg");
-            background-position: right;
+            background-image:url(../resourses/images/fondo-menu.jpg);
+            background-position: center;
             background-size: cover;
 
             img {
@@ -147,9 +147,9 @@
     }
 
     .section-main3 {
-        background-image: url(../resourses/images/fondo-menu.jpg);
-        background-size: cover;
-        background-position: center;
+        background-image:url(../resourses/images/fondo-menu.jpg);
+            background-position: center;
+            background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;

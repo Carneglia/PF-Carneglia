@@ -33,9 +33,12 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-a{
-    text-decoration: none;
-}
+
+            a {
+                text-decoration: none;
+                margin: 2px;
+            }
+
             img {
                 width: 40px;
             }
@@ -45,6 +48,10 @@ a{
             display: flex;
             align-items: center;
             justify-content: center;
+
+            a {
+                margin: 0;
+            }
 
             img {
                 width: 120px;
@@ -57,7 +64,7 @@ a{
             color: #ededed;
             font-size: 17px;
             font-weight: unset;
-            margin-top: 8px;
+            margin: 8px 0;
             margin-left: 20px;
         }
 
@@ -101,15 +108,15 @@ a{
     }
 }
 
-@media (max-width:576px) {
-    .footer {
-        .grupo-uno {
-            .nosotros-footer {
-                display: none;
-            }
-        }
-    }
-}
+// @media (max-width:576px) {
+//     .footer {
+//         .grupo-uno {
+//             .nosotros-footer {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
 
 // @media (max-width:576px) {
 //     .footer {

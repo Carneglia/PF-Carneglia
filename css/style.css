@@ -106,8 +106,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  background-image: url("../resourses/images/fondo-menu.jpg");
-  background-position: right;
+  background-image: url(../resourses/images/fondo-menu.jpg);
+  background-position: center;
   background-size: cover; }
   .main .flex-padre-container .flex-padre img {
     width: 95%;
@@ -193,8 +193,8 @@
 
 .main .section-main3 {
   background-image: url(../resourses/images/fondo-menu.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,7 +340,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-image: url(../resourses/images/fondo-menu1.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover; }
     .main-menu .flex-padre-menu-container .flex-padre-menu img {
@@ -927,13 +927,16 @@
       flex-direction: row;
       justify-content: space-evenly; }
       .footer .grupo-uno .redes-footer a {
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 2px; }
       .footer .grupo-uno .redes-footer img {
         width: 40px; }
     .footer .grupo-uno figure {
       display: flex;
       align-items: center;
       justify-content: center; }
+      .footer .grupo-uno figure a {
+        margin: 0; }
       .footer .grupo-uno figure img {
         width: 120px;
         margin: 10px; }
@@ -942,7 +945,7 @@
       color: #ededed;
       font-size: 17px;
       font-weight: unset;
-      margin-top: 8px;
+      margin: 8px 0;
       margin-left: 20px; }
     .footer .grupo-uno h6:hover {
       color: white;
@@ -968,10 +971,6 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 40px 0; } }
-
-@media (max-width: 576px) {
-  .footer .grupo-uno .nosotros-footer {
-    display: none; } }
 
 .h1-menu {
   text-align: center;
@@ -999,7 +998,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 10px;
@@ -1091,7 +1090,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover; }
     .acompanamientos-container .acompanamientos .fries-box {
@@ -1156,7 +1155,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover; }
     .pastas-container .pastas article {
@@ -1199,7 +1198,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover; }
     .empanadas-container .empanadas article {
@@ -1228,7 +1227,7 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-image: url(https://i.pinimg.com/originals/a8/f2/65/a8f265e983f2c065b8128eaed8ccb9a7.jpg);
+    background-image: url(../resourses/images/fondo-menu2.jpg);
     background-position: center;
     background-size: cover; }
     .postres-container .postres article {
