@@ -12,11 +12,16 @@
 
         a {
             font-family: "Oswald";
-            color: white;
+            color: #ededed;
             font-size: 17px;
             text-align: center;
             text-decoration: none;
             margin-left: 20px;
+        }
+
+        a:hover {
+            color: white;
+            transition: 0.5s ease;
         }
 
         .phone-footer {
@@ -28,7 +33,9 @@
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-
+a{
+    text-decoration: none;
+}
             img {
                 width: 40px;
             }
@@ -47,11 +54,17 @@
 
         h6 {
             font-family: "Oswald";
-            color: white;
+            color: #ededed;
             font-size: 17px;
             font-weight: unset;
             margin-top: 8px;
             margin-left: 20px;
+        }
+
+        h6:hover {
+            color: white;
+            transition: 0.5s ease;
+
         }
 
         .small-footer {
@@ -61,6 +74,7 @@
             margin-top: 5px;
             padding: 5px;
         }
+
     }
 
     .grupo-dos {
@@ -68,11 +82,11 @@
         background-color: black;
         color: white;
         padding: 10px 0;
-        small{
+
+        small {
             margin: 20px;
         }
     }
-
 }
 
 @media (max-width:992px) {
@@ -88,13 +102,15 @@
 }
 
 @media (max-width:576px) {
-         .footer {
-            .grupo-uno{
-                .nosotros-footer{
-                    display: none;
-                }
+    .footer {
+        .grupo-uno {
+            .nosotros-footer {
+                display: none;
             }
-        }}
+        }
+    }
+}
+
 // @media (max-width:576px) {
 //     .footer {
 //         .footer-container {
