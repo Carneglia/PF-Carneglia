@@ -123,8 +123,6 @@
     .main-contacto {
         .h1-contacto {
             font-size: 33px;
-            font-family: "paytone";
-            text-transform: uppercase;
         }
 
         .h2-contacto {
@@ -203,6 +201,14 @@
                     width: 100px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .main-contacto {
+        .h1-contacto {
+            font-size: 25px;
         }
     }
 }

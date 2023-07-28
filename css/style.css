@@ -497,9 +497,7 @@
 
 @media (max-width: 1400px) {
   .main-contacto .h1-contacto {
-    font-size: 33px;
-    font-family: "paytone";
-    text-transform: uppercase; }
+    font-size: 33px; }
   .main-contacto .h2-contacto {
     font-size: 24px;
     padding-top: 8px; } }
@@ -546,6 +544,10 @@
       align-items: center; }
       .main-contacto .form-container .mas-info-box .mas-info-logo {
         width: 100px; } }
+
+@media (max-width: 550px) {
+  .main-contacto .h1-contacto {
+    font-size: 25px; } }
 
 .nosotros-titulo-container {
   box-sizing: border-box;
@@ -801,7 +803,8 @@
       padding: 10px;
       max-width: 800px;
       text-align: justify;
-      font-family: "oswald"; }
+      font-family: "oswald";
+      font-size: 18px; }
     .main-nos-importa .blog-container article .nos-importa-iframe {
       border-radius: 15px; }
     .main-nos-importa .blog-container .h3-nos-importa {
@@ -837,20 +840,22 @@
       max-width: 50px;
       border-radius: 50%; }
     .main-nos-importa .blog-container .ul-playas-limpias {
-      background-color: #f4ff2283;
+      background-color: #ECC55C;
       padding: 10px 10px 35px 20px;
       border-radius: 15px; }
       .main-nos-importa .blog-container .ul-playas-limpias li {
         margin-top: 20px;
         margin-left: 25px;
         max-width: 850px;
-        font-family: "oswald"; }
+        font-family: "oswald";
+        font-size: 18px; }
     .main-nos-importa .blog-container p, .main-nos-importa .blog-container .playas-limpias-notas .blog-container p {
       color: black;
       padding: 10px;
       max-width: 800px;
       text-align: justify;
-      font-family: "oswald"; }
+      font-family: "oswald";
+      font-size: 18px; }
       .main-nos-importa .blog-container p a, .main-nos-importa .blog-container .playas-limpias-notas .blog-container p a {
         color: #167ac6; }
       .main-nos-importa .blog-container p a:hover {
@@ -920,14 +925,21 @@
 
 @media (max-width: 576px) {
   .h1-nos-importa {
-    font-size: 27px; }
+    font-size: 25px; }
   .main-nos-importa .blog-container article .h2-nos-importa {
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px; }
   .main-nos-importa .blog-container article .p-reciclar {
-    font-size: 18px; }
+    font-size: 18px;
+    text-align: unset; }
+  .main-nos-importa .blog-container article p, .main-nos-importa .blog-container .playas-limpias-notas .blog-container article p {
+    text-align: unset;
+    font-size: 17px; }
+  .main-nos-importa .blog-container p, .main-nos-importa .blog-container .playas-limpias-notas .blog-container p {
+    font-size: 17px; }
   .main-nos-importa .blog-container .h3-nos-importa {
-    font-size: 21px; }
+    font-size: 21px;
+    text-align: center; }
   .main-nos-importa .blog-container .h4-nos-importa {
     font-size: 25px;
     margin-top: 30px;
@@ -935,9 +947,14 @@
   .main-nos-importa .blog-container article .nos-importa-iframe {
     width: 100%; }
   .main-nos-importa .blog-container small, .main-nos-importa .blog-container .playas-limpias-notas .blog-container small {
-    margin: 5px; }
+    margin: 5px;
+    text-align: center; }
+  .main-nos-importa .blog-container .p-style-title {
+    font-size: 23px; }
   .main-nos-importa .blog-container .ul-playas-limpias {
-    padding-left: 5px; } }
+    padding-left: 5px; }
+    .main-nos-importa .blog-container .ul-playas-limpias li {
+      font-size: 17px; } }
 
 .footer {
   width: 100%;
