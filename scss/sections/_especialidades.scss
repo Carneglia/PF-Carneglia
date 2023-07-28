@@ -7,7 +7,7 @@
     font-size: 36px;
 
     a {
-        color: #b31312;
+        color: $rojo;
         font-family: "paytone";
         text-transform: uppercase;
         text-decoration: none;
@@ -17,7 +17,7 @@
 h2 {
     font-family: "invisible";
     text-align: center;
-    color: #2B2A4C;
+    color: $azul;
     font-size: 35px;
     margin: 10px;
 
@@ -44,32 +44,8 @@ h2 {
             margin: 10px 5px;
         }
 
-        .pollo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px 5px;
-        }
-
-        .merluza-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px 5px;
-        }
-
-        .napo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px 5px;
-        }
-
-        .sandwich-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px 5px;
+        .pollo-container, .merluza-container, .napo-container, .sandwich-container {
+            @extend .carne-container
         }
 
         img {

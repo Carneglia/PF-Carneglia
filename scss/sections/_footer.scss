@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #000000e6;
 
     .grupo-uno {
         width: 100%;
@@ -12,7 +12,7 @@
 
         a {
             font-family: "Oswald";
-            color: #ededed;
+            color: $gris;
             font-size: 17px;
             text-align: center;
             text-decoration: none;
@@ -56,12 +56,17 @@
             img {
                 width: 120px;
                 margin: 10px;
+
+            }
+
+            img:hover {
+                transform: (550px);
             }
         }
 
         h6 {
             font-family: "Oswald";
-            color: #ededed;
+            color: $gris;
             font-size: 17px;
             font-weight: unset;
             margin: 8px 0;
@@ -76,10 +81,21 @@
 
         .small-footer {
             font-family: "oswald";
-            color: white;
+            color: $gris;
             text-align: center;
             margin-top: 5px;
             padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .small-footer:hover {
+            @extend h6:hover;
+
+            img {
+                @extend h6:hover;
+            }
         }
 
     }
@@ -107,47 +123,3 @@
         }
     }
 }
-
-// @media (max-width:576px) {
-//     .footer {
-//         .grupo-uno {
-//             .nosotros-footer {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
-
-// @media (max-width:576px) {
-//     .footer {
-//         .footer-container {
-//             grid-template-columns: 1fr 1fr;
-//             grid-template-rows: 1fr 1fr 1fr;
-//             grid-template-areas: "telefono-footer logo-footer"
-//                 "iconos-pago redes-footer"
-//                 "small small";
-
-//             .contacto-footer {
-//                 display: none;
-//             }
-
-//             .nosotros-footer {
-//                 display: none;
-//             }
-
-//             .direccion-footer {
-//                 display: none;
-//             }
-
-//             .redes-footer {
-//                 img {
-//                     padding-left: 10px;
-//                 }
-//             }
-
-//             .logo-footer {
-//                 width: 100px;
-//             }
-//         }
-//     }
-// }

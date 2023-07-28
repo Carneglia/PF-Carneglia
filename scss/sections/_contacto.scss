@@ -1,6 +1,6 @@
 .main-contacto {
     .h1-contacto {
-        color: #B31312;
+        color: $rojo;
         text-align: center;
         background-color: #EEE2DE;
         font-family: "paytone";
@@ -12,7 +12,7 @@
 
     .h2-contacto {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        color: #2B2A4C;
+        color: $azul;
         font-weight: 500;
         text-align: center;
         padding: 10px 0;
@@ -62,7 +62,7 @@
             }
 
             input:hover {
-                border-color: #B31312;
+                border-color: $rojo;
             }
 
             textarea {
@@ -74,13 +74,13 @@
             }
 
             textarea:hover {
-                border-color: #B31312;
+                border-color: $rojo;
             }
 
             .send-button {
                 width: 70px;
                 height: 40px;
-                background-color: #B31312;
+                background-color: $rojo;
                 color: white;
                 margin: 10px 0;
                 padding-right: 2px;

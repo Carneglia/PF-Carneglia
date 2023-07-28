@@ -1,12 +1,13 @@
 .main {
     .h1-inicio {
-        color: #B31312;
+        color: $rojo;
         text-align: center;
         padding-top: 2px;
         padding-bottom: 6px;
         background-color: #EEE2DE;
         font-family: 'Oswald', sans-serif;
         font-size: 36px;
+        margin: 0;
 
         .h1-tu-clasico {
             font-family: "paytone";
@@ -24,7 +25,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             justify-items: center;
-            background-image:url(../resourses/images/fondo-menu.jpg);
+            background-image: url(../resourses/images/fondo-menu.jpg);
             background-position: center;
             background-size: cover;
 
@@ -37,7 +38,7 @@
     }
 
     .h2-inicio {
-        color: #2B2A4C;
+        color: $azul;
         text-align: center;
         font-size: 40px;
         text-align: center;
@@ -117,7 +118,7 @@
         }
 
         h3 {
-            color: #c91313;
+            color: $rojo;
             font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
             margin: 10px 0;
@@ -147,9 +148,9 @@
     }
 
     .section-main3 {
-        background-image:url(../resourses/images/fondo-menu.jpg);
-            background-position: center;
-            background-size: cover;
+        background-image: url(../resourses/images/fondo-menu.jpg);
+        background-position: center;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -178,6 +179,13 @@
         background-size: cover;
         display: flex;
         justify-content: center;
+            img{
+                border-radius: 15px;
+            }
+        .carousel-button{
+           background-color: $amarillo !important;
+           border-radius: 50%;
+        }
     }
 
 }
@@ -252,7 +260,7 @@
 
         .h1-tu-clasico {
             font-size: 29px;
-            color: #B31312;
+            color: $rojo;
         }
 
         .h2-inicio {
@@ -336,7 +344,7 @@
 
 @media (max-width: 550px) {
     .main {
-        background-image: url("../resourses/images/fondo-menu.jpg");
+        background-image: url(../resourses/images/fondo-menu.jpg);
         background-position: top;
         background-size: cover;
 
@@ -347,6 +355,13 @@
             justify-content: center;
             max-width: 360px;
             margin: auto;
+            div{
+             border-radius: 15px;   
+             img{
+                border-radius: 15px;
+            }
+            }
+           
         }
 
         .flex-padre-container {
@@ -361,7 +376,7 @@
 
         .h1-tu-clasico {
             font-size: 25px;
-            color: #2B2A4C;
+            color: $azul;
         }
 
         .h2-inicio {

@@ -1,22 +1,23 @@
+@import "./tools/variables";
 @import "./tools/reset";
 @import "./sections/header";
-@import "./sections/index.scss";
+@import "./sections/index";
 @import "./sections/menu";
 @import "./sections/contacto";
 @import "./sections/nosotros";
 @import "./sections/nos-importa";
-@import "./sections/footer.scss";
-@import "./sections/especialidades.scss";
-@import "./sections/acompanamientos.scss";
-@import "./sections/pastas.scss";
-@import "./sections/empanadas.scss";
-@import "./sections/postres.scss";
+@import "./sections/footer";
+@import "./sections/especialidades";
+@import "./sections/acompanamientos";
+@import "./sections/pastas";
+@import "./sections/empanadas";
+@import "./sections/postres";
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Oswald&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Reenie+Beanie&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Trochut:ital@1&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trochut:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@1,400;1,700&display=swap');
 
 
 

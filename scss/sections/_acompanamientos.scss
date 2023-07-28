@@ -10,42 +10,7 @@
         background-position: center;
         background-size: cover;
 
-        .fries-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .backed-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .smash-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .salad-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .tortillas-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px;
-        }
-
-        .bomb-box {
+        .fries-box, .backed-box, .smash-box, .salad-box, .tortillas-box, .bomb-box {
             display: flex;
             flex-direction: column;
             align-items: center;

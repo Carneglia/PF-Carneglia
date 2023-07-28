@@ -16,7 +16,7 @@
         justify-content: center;
 
         .h1-nosotros {
-            color: #b31312;
+            color: $rojo;
             text-align: center;
             font-family: "paytone";
             font-size: 46px;
@@ -29,7 +29,7 @@
 
         .h2-nosotros {
             font-family: "oswald";
-            color: #2B2A4C;
+            color: $azul;
             font-size: 42px;
             text-align: center;
             padding: 5px 10px;
@@ -63,7 +63,7 @@
 
         .h3-nosotros {
             font-family: "oswald";
-            color: #2B2A4C;
+            color: $azul;
             font-size: 30px;
             text-align: center;
             padding-top: 10px;
@@ -80,7 +80,7 @@
         }
 
         p {
-            color: rgb(33, 32, 32);
+            color: #212020;
             font-family: "oswald";
             text-align: center;
             margin: auto;
@@ -107,7 +107,7 @@
         }
 
         h5 {
-            color: #2B2A4C;
+            color: $azul;
             text-align: center;
             font-family: "paytone";
             font-size: 35px;
@@ -121,7 +121,7 @@
             font-size: 2rem;
             text-transform: uppercase;
             font-family: "paytone";
-            color: #b31312;
+            color: $rojo;
         }
 
         .nosotros-img {

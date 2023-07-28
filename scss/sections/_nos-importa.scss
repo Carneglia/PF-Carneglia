@@ -1,11 +1,11 @@
 .h1-nos-importa {
-    color: #B31312;
+    color: $rojo;
     text-align: center;
     background-color: #EEE2DE;
     font-family: "paytone";
-    padding-top: 2px;
-    padding-bottom: 6px;
-    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 9px;
+    font-size: 35px;
     text-transform: uppercase;
 }
 
@@ -15,10 +15,13 @@
     align-items: center;
 
     .blog-container {
+        @extend .main-nos-importa;
+        width: 95%;
+
         article {
             .h2-nos-importa {
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                color: #2B2A4C;
+                color: $azul;
                 font-size: 50px;
                 font-weight: 500;
                 padding: 15px
@@ -29,19 +32,27 @@
                 font-size: 22px;
                 font-weight: bold;
                 padding: 10px;
+                font-family: "oswald";
             }
 
             p {
-                color: #1f1f1f;
+                color: black;
                 padding: 10px;
                 max-width: 800px;
                 text-align: justify;
+                font-family: "oswald";
+            }
+        }
+
+        article {
+            .nos-importa-iframe {
+                border-radius: 15px;
             }
         }
 
         .h3-nos-importa {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: #2B2A4C;
+            color: $azul;
             font-size: 25px;
             font-weight: 500;
             padding: 15px
@@ -51,49 +62,69 @@
             font-size: 20px;
             text-transform: uppercase;
             font-weight: bold;
+            font-family: "oswald";
+        }
+
+        .playas-limpias-notas {
+            @extend .main-nos-importa;
+            padding-bottom: 40px;
         }
 
         .h4-nos-importa {
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: #B31312;
+            color: $rojo;
             font-size: 45px;
             font-weight: 500;
-            padding: 15px;
-            /* text-align: center; */
+            margin: 15px;
+            margin-top: 70px;
+            text-align: center;
         }
 
         .p-style-title {
-            color: #2B2A4C;
+            color: $azul;
             font-size: 26px;
+            font-family: "oswald";
         }
 
         .playas-limpias-img {
-            max-width: 70%;
+            max-width: 90%;
             padding: 15px;
-        }
-
-        .h5-nos-importa {
-            font-family: "carter";
-            color: #ee7b1c;
-            font-size: 35px;
-            font-weight: 500;
-            padding: 15px;
+            border-radius: 35px;
         }
 
         .emoji-abrazo {
             max-width: 50px;
+            border-radius: 50%;
         }
 
-        .ul-playas-limpias li {
-            margin-left: 25px;
-            max-width: 850px;
+        .ul-playas-limpias {
+            background-color: #f4ff2283;
+            padding: 10px 10px 35px 20px;
+            border-radius: 15px;
+
+            li {
+                margin-top: 20px;
+                margin-left: 25px;
+                max-width: 850px;
+                font-family: "oswald";
+            }
         }
 
         p {
-            color: #1f1f1f;
+            color: black;
             padding: 10px;
             max-width: 800px;
             text-align: justify;
+            font-family: "oswald";
+
+            a {
+                color: #167ac6;
+            }
+
+            a:hover {
+                color: #549ed7;
+                transition: 0.7s ease;
+            }
         }
     }
 }
@@ -115,10 +146,6 @@
 
             .h4-nos-importa {
                 font-size: 43px;
-            }
-
-            .h5-nos-importa {
-                font-size: 33px;
             }
         }
     }
@@ -145,8 +172,11 @@
                 font-size: 41px;
             }
 
-            .h5-nos-importa {
-                font-size: 31px;
+            article {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
@@ -166,6 +196,11 @@
 
                 .p-reciclar {
                     font-size: 20px;
+
+                }
+
+                p {
+                    max-width: 85%;
                 }
             }
 
@@ -173,8 +208,15 @@
                 font-size: 39px;
             }
 
-            .h5-nos-importa {
-                font-size: 29px;
+            p {
+                max-width: 85%;
+                text-align: start;
+            }
+
+            .ul-playas-limpias {
+                margin: auto;
+                max-width: 85%;
+
             }
         }
     }
@@ -189,8 +231,7 @@
         .blog-container {
             article {
                 .h2-nos-importa {
-                    font-size: 44px;
-                    text-align: start;
+                    font-size: 37px;
                 }
 
                 .p-reciclar {
@@ -203,11 +244,16 @@
             }
 
             .h4-nos-importa {
-                font-size: 39px;
+                font-size: 32px;
             }
 
-            .h5-nos-importa {
-                font-size: 29px;
+            .playas-limpias-notas {
+                padding-bottom: 25px;
+            }
+
+            .ul-playas-limpias {
+                padding-bottom: 25px;
+
             }
         }
 
@@ -215,6 +261,7 @@
             .nos-importa-iframe {
                 width: 100%;
             }
+
         }
     }
 }
@@ -225,12 +272,11 @@
     }
 
     .main-nos-importa {
-        align-items: flex-start;
-
         .blog-container {
             article {
                 .h2-nos-importa {
-                    font-size: 42px;
+                    font-size: 30px;
+                    padding: 5px;
                 }
 
                 .p-reciclar {
@@ -243,11 +289,9 @@
             }
 
             .h4-nos-importa {
-                font-size: 37px;
-            }
-
-            .h5-nos-importa {
-                font-size: 27px;
+                font-size: 25px;
+                margin-top: 30px;
+                padding: 0 10px;
             }
 
             article {
@@ -255,6 +299,14 @@
                     width: 100%;
 
                 }
+            }
+            small{
+                margin: 5px;
+            }
+
+            .ul-playas-limpias {
+                padding-left: 5px;
+
             }
         }
     }
