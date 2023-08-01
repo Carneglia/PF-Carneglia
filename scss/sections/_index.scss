@@ -355,8 +355,11 @@
             justify-content: center;
             max-width: 360px;
             margin: auto;
+            .carousel-item{
+                transition: transform 1s ease, opacity .2s ease-out
+            }
             div{
-             border-radius: 15px;   
+             border-radius: 15px; 
              img{
                 border-radius: 15px;
             }
