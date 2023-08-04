@@ -15,5 +15,5 @@ $para = 'cd.carneglia@gmail.com';
 $asunto = 'Este mail fue enviado desde el sitio Rotisería 3'
 
 mail($para, $asunto, utf8_decode($mensaje), $header)
-header('location:exito.html');
+header('location:/pages/exito.html');
 ?>
